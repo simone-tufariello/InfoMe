@@ -1,0 +1,507 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#prova{
+  padding-left: 2%;
+  /*
+  background-color:#ADDDD0;
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15%; */
+}
+
+.sidebar{
+  margin-top: -7px;
+  padding: 2%;
+  width: 21%;
+  background-color: #f1f1f1; 
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+
+body{
+  min-height: 100vh;
+  /* 
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+
+.numRis{
+  margin-left: 26%;
+  margin-bottom: 2px;
+  color: #707070;
+}
+
+#numRep{
+  padding-top: 2%;  
+}
+
+#tuttiPreferiti{
+  margin-left: 3%;
+  color: #8FDCC8;
+  cursor: pointer;
+  font-size:25px;
+}
+
+.test{
+  display: flex;
+  flex-direction: row; /* test= classe per gestire gli articoli salvati */
+  align-items: left;
+}
+
+.test .bi{
+  margin-top: 8px;
+  margin-left: -20px;
+  opacity: 70%;
+  color: #6F38C5;
+  border: none;
+  cursor: pointer;
+  transition: all 1.0s ease;
+}
+
+.test .bi:hover{
+  opacity: 100%;
+}
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 0 50px 40px;
+}
+
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;   /* spazio tra una card e l'altra */
+  border-radius: 25px;
+}
+
+.card{
+  border-radius: 25px;      /* corpo della card */
+  background-color: #FFF;
+}
+
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 5px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 75%;
+  width: 100%;
+  background-color: #6F38C5;  /* #6F38C5 */
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after,{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #6F38C5; 
+}
+
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+
+.card-image{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #6F38C5;
+}
+
+
+.btnCategoria{
+  margin-top: -7px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  font-size: 13px;
+  color: #FFF;
+  padding: 2px 7px;
+  background-color: #5CB8E4;
+  border-radius: 6px;
+}
+
+.titolo{
+  font-size: 14px;
+  font-weight: 500;
+  color: #181818;
+}
+.autore{
+  font-size: 12px;
+  color: #707070;
+  text-align: center;
+  margin-top: 6px;
+}
+.btnLink {
+  border: none;
+  font-size: 13px;
+  color: #6F38C5;
+  padding: 2px 7px;
+  /*background-color: #6F38C5; */
+  border: 1px solid #6F38C5;
+  border-radius: 6px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btnLink:hover{
+  background: #6F38C5;
+  color: #FFF;
+}
+
+.swiper-navBtn{
+  color: #8FDCC8;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #57C3DB;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0; 
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+/*-------------------------------------- COLORI GIORNALI ------------------------------- */
+/* 
+azzurro: #0697FF;
+arancio: #DF711B;
+arancino: #E8AA42;
+verde: #0A9A5E;
+rosso: #CF0000;
+marroncino: #654122;
+rosino: #AE27A0;
+
+*/
+/* ----------- REPUBBLICA ----------- */
+.overlay.repO{
+  background-color: #6F38C5;
+}
+
+.card-image .card-img.repC{
+  border: 4px solid #6F38C5;
+}
+
+.btnLink.repB{
+  color: #6F38C5;
+  border: 1px solid #6F38C5;
+}
+
+.btnLink.repB:hover{
+  background: #6F38C5;
+  color: #FFF;
+}
+
+.test .bi.repIC{
+  color: #6F38C5;
+}
+
+/* ----------- CORRIERE ----------- */
+.overlay.corrO{
+  background-color: #DF711B;
+}
+
+.card-image .card-img.corrC{
+  border: 4px solid #DF711B;
+}
+
+.btnLink.corrB{
+  color: #DF711B;
+  border: 1px solid #DF711B;
+}
+
+.btnLink.corrB:hover{
+  background: #DF711B;
+  color: #FFF;
+}
+
+.test .bi.corrIC{
+  color: #DF711B;
+}
+
+/* ----------- SOLE ----------- */
+.overlay.soleO{
+  background-color: #0697FF;
+}
+
+.card-image .card-img.soleC{
+  border: 4px solid #0697FF;
+}
+
+.btnLink.soleB{
+  color: #0697FF;
+  border: 1px solid #0697FF;
+}
+
+.btnLink.soleB:hover{
+  background: #0697FF;
+  color: #FFF;
+}
+
+.test .bi.soleIC{
+  color: #0697FF;
+}
+
+/* ----------- GIORNALE ----------- */
+.overlay.giornO{
+  background-color: #0A9A5E;
+}
+
+.card-image .card-img.giornC{
+  border: 4px solid #0A9A5E;
+}
+
+.btnLink.giornB{
+  color: #0A9A5E;
+  border: 1px solid #0A9A5E;
+}
+
+.btnLink.giornB:hover{
+  background: #0A9A5E;
+  color: #FFF;
+}
+
+.test .bi.gioIC{
+  color: #0A9A5E;
+}
+
+/* ----------- LIBERO ----------- */
+.overlay.liberoO{
+  background-color: #654122;
+}
+.card-image .card-img.liberoC{
+  border: 4px solid #654122;
+}
+.btnLink.liberoB{
+  color: #654122;
+  border: 1px solid #654122;
+}
+.btnLink.liberoB:hover{
+  background: #654122;
+  color: #FFF;
+}
+.test .bi.libIC{
+  color: #654122;
+}
+
+/* ----------- STAMPA ----------- */
+.overlay.stampaO{
+  background-color: #E8AA42;
+}
+
+.card-image .card-img.stampaC{
+  border: 4px solid #E8AA42;
+}
+
+.btnLink.stampaB{
+  color: #E8AA42;
+  border: 1px solid #E8AA42;
+}
+
+.btnLink.stampaB:hover{
+  background: #E8AA42;
+  color: #FFF;
+}
+
+.test .bi.stampIC{
+  color: #E8AA42;
+}
+
+/* ----------- CARLINO ----------- */
+.overlay.carlO{
+  background-color: #CF0000;
+}
+
+.card-image .card-img.carlC{
+  border: 4px solid #CF0000;
+}
+
+.btnLink.carlB{
+  color: #CF0000;
+  border: 1px solid #CF0000;
+}
+
+.btnLink.carlB:hover{
+  background: #CF0000;
+  color: #FFF;
+}
+
+.test .bi.carlIC{
+  color: #CF0000;
+}
+
+/* ----------- AVVENIRE ----------- */
+.overlay.avvenO{
+  background-color: #AE27A0;
+}
+
+.card-image .card-img.avvenC{
+  border: 4px solid #AE27A0;
+}
+
+.btnLink.avvenB{
+  color: #AE27A0;
+  border: 1px solid #AE27A0;
+}
+
+.btnLink.avvenB:hover{
+  background: #AE27A0;
+  color: #FFF;
+}
+
+.test .bi.avvenIC{
+  color: #AE27A0;
+}
+
+/*--------------------------------------------------------------------------------------- */
+
+br {
+  content: "";
+  margin: 1.5em;
+  display: block;
+  font-size: 24%;
+  outline: red;
+}
+
+.btnCerca{
+  border: none;
+  font-size: 15px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-top: 10px;
+  color: #8FDCC8;
+  border: 1px solid #8FDCC8;
+}
+
+.btnCerca:hover{
+  background: #8FDCC8;
+  color: #FFF;
+}
+
+.btn-icon{
+  border: none;
+  color: #F5CE62;   /* ffd661 */
+  background-color: #f1f1f1;
+  /* transition: all 1.3s ease; */
+}
+
+.btn-icon:hover{
+  color: #FDBE11;
+}
+
+.titoloIniz{
+  font-size: 55px;
+  margin-left: -10px;
+  color: #8FDCC8;
+  //-webkit-text-stroke: 1px gray;
+}
+
+#modificaFiltri{
+  width: 90%;
+  outline-color: #8FDCC8;
+}
+
+.linkTuttiGiornali{
+  color: #707070;
+}
+
+#loader{
+  color:#8FDCC8;
+  margin-left:49%;
+  margin-top: 3%;
+}
+
+.alert{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  } 
+  .numRis{
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1770px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #modificaFiltri{
+    width: 50%;
+  } 
+  .numRis{
+    margin-left: 20%;
+  }
+}
